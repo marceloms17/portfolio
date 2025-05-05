@@ -1,0 +1,91 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Marcelo Morais - Resume</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <script>
+    function showLanguage(lang) {
+      document.getElementById('en').style.display = lang === 'en' ? 'block' : 'none';
+      document.getElementById('pt').style.display = lang === 'pt' ? 'block' : 'none';
+    }
+  </script>
+</head>
+<body class="bg-white text-gray-800 font-sans tracking-wide leading-relaxed">
+
+<div class="fixed top-4 right-4 flex gap-2 z-10">
+  <button onclick="showLanguage('en')" class="bg-green-600 text-white px-4 py-2 rounded hover:bg-green-700 transition">View in English 🇺🇸</button>
+  <button onclick="showLanguage('pt')" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition">Ver em Português 🇧🇷</button>
+</div>
+
+<main class="max-w-6xl mx-auto px-6 py-12">
+
+  <!-- ENGLISH VERSION -->
+  <div id="en">
+    <h1 class="text-3xl font-bold">Marcelo Morais dos Santos</h1>
+    <p class="text-lg text-gray-600 mb-4">Software Engineer | .NET Specialist | Backend Developer</p>
+
+    <h2 class="text-xl font-semibold mt-6">Summary</h2>
+    <p>
+      Over 10 years of experience in software development with expertise in .NET technologies, microservices, cloud (AWS), and financial systems. Strong knowledge of system architecture, clean code, and SOLID principles. Proven track record in improving performance, reducing operational costs, and leading backend development in fintech, banking, and digital platforms.
+    </p>
+
+    <h2 class="text-xl font-semibold mt-6">Tech Stack</h2>
+    <ul class="list-disc list-inside">
+      <li>.NET Core, C#, WebAPI, Dapper, Entity Framework, RabbitMQ, Kafka</li>
+      <li>SQL Server, PostgreSQL, Oracle, Redis, DynamoDB</li>
+      <li>AWS (Lambda, S3, SQS), Docker, Hangfire, Git, Bitbucket</li>
+      <li>TDD, SOLID, DDD, CQRS, Clean Architecture</li>
+      <li>CI/CD, Azure DevOps, Scrum, Kanban, Jira</li>
+    </ul>
+
+    <h2 class="text-xl font-semibold mt-6">Experience Highlights</h2>
+    <ul class="list-disc list-inside">
+      <li>Developed high-availability APIs for the fund investment product, improving advisor efficiency by 100% and reducing manual processes.</li>
+      <li>Automated virtual credit card generation, improving throughput by 20% and card activation by 30%.</li>
+      <li>Modernized legacy financial systems with microservices architecture and cloud-native approaches.</li>
+      <li>Implemented PIX transactions with real-time processing, increasing transaction volume by 15%.</li>
+    </ul>
+
+    <h2 class="text-xl font-semibold mt-6">Languages</h2>
+    <p>Portuguese (Native), English (Advanced – reading/writing/listening, conversation in progress)</p>
+  </div>
+
+  <!-- PORTUGUESE VERSION -->
+  <div id="pt" style="display: none">
+    <h1 class="text-3xl font-bold">Marcelo Morais dos Santos</h1>
+    <p class="text-lg text-gray-600 mb-4">Engenheiro de Software | Especialista .NET | Desenvolvedor Backend</p>
+
+    <h2 class="text-xl font-semibold mt-6">Resumo</h2>
+    <p>
+      Mais de 10 anos de experiência em desenvolvimento de software, com foco em sistemas backend escaláveis, resilientes e voltados ao setor financeiro. Especialista em .NET Core, microsserviços, mensageria e práticas modernas como TDD, SOLID, DDD e Clean Architecture. Forte atuação com AWS, bancos de dados relacionais e não-relacionais e integrações complexas em tempo real.
+    </p>
+
+    <h2 class="text-xl font-semibold mt-6">Stack Tecnológica</h2>
+    <ul class="list-disc list-inside">
+      <li>.NET Core, C#, WebAPI, Dapper, Entity Framework, RabbitMQ, Kafka</li>
+      <li>SQL Server, PostgreSQL, Oracle, Redis, DynamoDB</li>
+      <li>AWS (Lambda, S3, SQS), Docker, Hangfire, Git, Bitbucket</li>
+      <li>TDD, SOLID, DDD, CQRS, Clean Architecture</li>
+      <li>CI/CD, Azure DevOps, Scrum, Kanban, Jira</li>
+    </ul>
+
+    <h2 class="text-xl font-semibold mt-6">Principais Resultados</h2>
+    <ul class="list-disc list-inside">
+      <li>Desenvolvimento de APIs para o produto de fundos da plataforma de investimentos, aumentando a eficiência dos assessores em 100%.</li>
+      <li>Automatização de cartões virtuais, reduzindo tempo de geração e aumentando ativações em 30%.</li>
+      <li>Modernização de sistemas bancários legados com microsserviços e cloud AWS.</li>
+      <li>Implementação de PIX com processamento em tempo real e aumento de 15% no volume de transações.</li>
+    </ul>
+
+    <h2 class="text-xl font-semibold mt-6">Idiomas</h2>
+    <p>Português (nativo), Inglês (avançado para leitura, escrita e escuta; fala em progresso)</p>
+  </div>
+
+</main>
+
+<script>showLanguage('pt');</script>
+</body>
+</html>
